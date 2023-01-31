@@ -34,7 +34,7 @@ evan_wallet = 0
 anthony_wallet = 0
 
 loop do
-  if index>blockchain.size
+  if index==blockchain.size
     break
   end
   if blockchain[index]["from_user"]=="ben"
@@ -72,3 +72,4 @@ index = index +1
 end
 
 puts "Ben's KelloggCoin balance is #{ben_wallet}"
+puts "Brian's KelloggCoin balance is #{brian_wallet}"
